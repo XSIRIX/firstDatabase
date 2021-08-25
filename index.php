@@ -14,8 +14,8 @@ if ($results === false) {
 <?php require 'include/header.php'; ?>
     <body>
 
-    <h1>My greetings to the world!</h1>
-
+    <h1>Blog for the universe</h1>
+    <a href="http://sa-dev.intern.ebroot.de:8080/new-article.php">Create New Article</a>
     <ul>
     <?php foreach ($articles as $article): ?>
         <li>
@@ -27,7 +27,7 @@ if ($results === false) {
         <?php endforeach; ?>
     </ul>
 
-    <a href="http://sa-dev.intern.ebroot.de:8080/new-article.php">Create New Article</a>
+
 
     </body>
 <?php require 'include/footer.php'; ?>

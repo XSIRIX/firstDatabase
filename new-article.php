@@ -56,6 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <h1>My Blog</h1>
 
 <h2>New Article</h2>
+<a href="index.php">Go To Home</a>
 
 <?php if (!empty($errors)): ?>
     <ul>
