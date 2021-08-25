@@ -1,6 +1,10 @@
 <?php
 require 'include/database.php';
 
+//Get database connection
+
+$conn = getDB();
+
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 $results = pg_query($conn, "SELECT * FROM sirivat WHERE id = " . $_GET['id']);
 
@@ -26,8 +30,8 @@ if ($results === false) {
     <ul>
         <li>
             <article>
-                <h2><?= $article['title'];?></h2>
-                <p><?= $article['content'];?></p>
+                <h2><?= htmlspecialchars($article['title']); ?></h2>
+                <p><?= htmlspecialchars($article['content']); ?></p>
             </article>
         </li>
     </ul>
